@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>江戸じゃんけん「東八拳」バトル</title>
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,13 +18,13 @@
     <div class="rule-box">
 
       <p>
-        東八拳は、江戸時代末期に流行した
-        「狐・鉄砲・庄屋」の3種類の手を使った
+        東八拳は、江戸時代末期に流行した<br>
+        「狐・鉄砲・庄屋」の3種類の手を使った<br>
         「三すくみ」の拳遊びです。
       </p>
 
       <p>
-        じゃんけんに似た遊びで、
+        じゃんけんに似た遊びで、<br>
         3回連続で勝つと「1本」です。
       </p>
 
@@ -37,63 +36,35 @@
       <p>庄屋（両手を膝に置く）：鉄砲に勝つ</p>
       <p>鉄砲（胸前で鉄砲を構える）：狐に勝つ</p>
 
-      <div class="rule-image-wrap">
-        <img
-          src="img/tohakken-rule.png"
-          alt="東八拳ルール"
-          class="rule-image"
-        >
-      </div>
+      <img
+        src="img/tohakken-rule.png"
+        alt="東八拳のルール"
+        class="rule-image"
+      >
 
     </div>
 
-    <button id="startBtn">
-      勝負開始
-    </button>
+    <button id="startBtn">勝負開始</button>
 
     <div class="game">
 
       <p class="enemy-title">
-        相手の手：
-        <span id="enemyHand">？</span>
+        相手の手：<span id="enemyHand">？</span>
       </p>
 
-      <p class="guide">
-        あなたの手を選んでください
-      </p>
+      <p>あなたの手を選んでください</p>
 
       <div class="buttons">
-
-        <button class="handBtn fox" data-hand="狐">
-          狐
-        </button>
-
-        <button class="handBtn shoya" data-hand="庄屋">
-          庄屋
-        </button>
-
-        <button class="handBtn gun" data-hand="鉄砲">
-          鉄砲
-        </button>
-
+        <button class="handBtn fox" data-hand="狐">狐</button>
+        <button class="handBtn shoya" data-hand="庄屋">庄屋</button>
+        <button class="handBtn gun" data-hand="鉄砲">鉄砲</button>
       </div>
 
-      <p id="result">
-        結果がここに出ます
-      </p>
+      <p id="result">結果がここに出ます</p>
 
       <div class="status">
-
-        <p>
-          連勝：
-          <span id="combo">0</span>
-        </p>
-
-        <p>
-          HP：
-          <span id="hp">3</span>
-        </p>
-
+        <p>連勝：<span id="combo">0</span></p>
+        <p>HP：<span id="hp">3</span></p>
       </div>
 
     </div>
@@ -102,19 +73,15 @@
 
       <h2>ゲーム終了</h2>
 
-      <button id="restartBtn">
-        もう一度遊ぶ
-      </button>
+      <p>
+        称号：<span id="rank">見習い拳士</span>
+      </p>
+
+      <button id="restartBtn">もう一度遊ぶ</button>
 
     </div>
 
   </div>
-
-  <!-- 音声ファイル -->
-  <audio id="startSound" src="audio/start.mp3"></audio>
-  <audio id="foxSound" src="audio/fox.mp3"></audio>
-  <audio id="shoyaSound" src="audio/shoya.mp3"></audio>
-  <audio id="gunSound" src="audio/gun.mp3"></audio>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/app.js"></script>
